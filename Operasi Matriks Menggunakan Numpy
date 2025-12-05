@@ -1,0 +1,51 @@
+import numpy as np
+
+M1 = np.array([
+    [1, 2],
+    [3, 4]
+])
+M2 = np.array([
+    [5, 6],
+    [7, 8]
+])
+
+#Penjumlahan Matriks
+M_tambah = M1 + M2
+print("Penjumlahan Matriks: ")
+print(M_tambah)
+print()
+
+#Pengurangan Matriks
+M_kurang = M1 - M2
+print("Pengurangan Matriks: ")
+print(M_kurang)
+print()
+
+#Perkalian Matriks (Dot Product)
+M_kali = np.dot(M1, M2)
+print()
+#atau
+M_kali_lain = M1 @ M2
+print("Perkalian Matriks: ")
+print(M_kali)
+print("atau")
+print(M_kali_lain)
+print()
+
+#Transpose Matriks
+M_transpose = M1.T
+print("Transpose: ")
+print(M_transpose)
+print()
+
+#Mengakses Elemen Matriks
+print("Elemen Matriks: ")
+print(M1[0][1])
+print()
+
+#Membuat Matriks Nol / Identitas
+Z = np.zeros((3, 3))
+I = np.eye(3)
+print("Z:",Z)
+print()
+print("I",I) 
